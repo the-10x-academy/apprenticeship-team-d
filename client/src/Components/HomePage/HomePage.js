@@ -1,16 +1,24 @@
+import { useEffect, useState } from "react";
 import logo from "../../logo.svg";
 import "./HomePage.css";
 
 function HomePage() {
+	const [apiResponse, setapires] = useState("");
+
+	function callAPI() {
+		fetch("http://localhost:9000/")
+			.then((res) => res.text())
+			.then((res) => setapires(res));
+	}
+
+	useEffect(() => {
+		callAPI();
+		console.log("called");
+	});
+
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Welcome To 10xAcademy React BoilerPlate (created on top of FB
-					create-react-app)
-				</p>
-			</header>
+			<div dangerouslySetInnerHTML={{ __html: apiResponse }} />
 		</div>
 	);
 }
