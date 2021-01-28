@@ -11,6 +11,9 @@ coverage
 # production
 build
 
+#cachefile
+client/.eslintcache
+
 # misc
 .DS_Store
 .env.local
