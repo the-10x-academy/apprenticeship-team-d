@@ -23,15 +23,10 @@
 	width: 346px;
 	height: 71px;
 	text-align: left;
-	font: normal normal normal 45px/60px palatino;
+	font: normal normal normal 45px/60px "Palatino Linotype";
 	letter-spacing: 0px;
 	color: #006238;
 	opacity: 1;
-}
-
-span {
-	font: normal normal normal 45px/60px verdana;
-	letter-spacing: 0px;
 }
 
 button {
