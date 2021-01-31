@@ -12,7 +12,7 @@ coverage
 build
 
 #cachefile
-.eslintcache
+client/.eslintcache
 
 # misc
 .DS_Store
