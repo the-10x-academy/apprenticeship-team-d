@@ -1,0 +1,101 @@
+#back {
+  background-color: #fffeff;
+  position: fixed;
+  width: 1920px;
+  height: 200px;
+  top: 0px;
+}
+
+.logoHead {
+  position: absolute;
+  left: 200px;
+}
+.outer-div {
+  top: 25px;
+  left: 200px;
+  width: 64px;
+  height: 64px;
+  background: transparent url("icon.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+  flex-wrap: wrap;
+}
+
+img {
+  flex: 50%;
+  position: fixed;
+  top: 12px;
+  left: 70px;
+  right: 0px;
+  width: 35px;
+  height: 50px;
+  opacity: 1;
+}
+.back {
+  background-color: #a56ec5;
+}
+.text1 {
+  position: fixed;
+  width: 289;
+  height: 71;
+  top: -45px;
+  left: 274px;
+  font: normal normal normal 64px/71px Palatino;
+  letter-spacing: 0px;
+  color: #006238;
+  opacity: 1;
+}
+
+.cam {
+  max-width: 100%;
+  left: 1672px;
+  top: 40px;
+  bottom: 200px;
+  height: 48px;
+  width: 48px;
+  position: fixed;
+  opacity: 1;
+  cursor: pointer;
+}
+
+hr {
+  font: normal normal normal no-repeat #99ffd3;
+  position: relative;
+  top: 23px;
+  z-index: 10;
+}
+.line-cont {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+.line {
+  position: relative;
+  top: 96px;
+}
+
+.text1 {
+  flex: 50%;
+}
+
+.cam-outer {
+  display: flex;
+}
+
+.cam-mid {
+  flex: 1;
+  margin: 1em;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}

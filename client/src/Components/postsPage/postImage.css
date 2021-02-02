@@ -1,0 +1,153 @@
+/* box of each post */
+.boxdiv {
+	position: relative;
+	top: 200px;
+	bottom: 100px;
+	left: 600px;
+	width: 800px;
+	height: 700px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #707070;
+	border-radius: 10px;
+	margin-bottom: 100px;
+	z-index: -1;
+}
+/*for the footer text*/
+.headtag {
+	position: relative;
+	top: 70px;
+	left: 32px;
+	width: 450px;
+	height: 28px;
+	text-align: left;
+	font: normal normal bold 28px/34px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+/*for the share button*/
+.sharebut {
+	position: relative;
+	top: 120px;
+	left: 64px;
+	width: 32px;
+	height: 32px;
+}
+/*for the date*/
+.date {
+	position: relative;
+	top: 64px;
+	left: 648px;
+	width: 124px;
+	height: 24px;
+	text-align: left;
+	font: normal normal normal 20px/24px Verdana;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	white-space: nowrap;
+}
+/*dislpaying no of likes*/
+.likes {
+	position: relative;
+	top: 64px;
+	left: 32px;
+	width: 77px;
+	height: 24px;
+	text-align: left;
+	font: normal normal normal 20px/24px Verdana;
+	letter-spacing: 0px;
+	color: #707070;
+	opacity: 1;
+	white-space: nowrap;
+}
+/*for like button*/
+.likebut {
+	position: relative;
+	top: 120px;
+	height: 32px;
+	width: 32px;
+	left: 32px;
+	background: transparent 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+/*for first dot*/
+.dots {
+	position: relative;
+	top: 46px;
+	left: 732px;
+	height: 8px;
+	width: 8px;
+	background-color: #000000;
+	border-radius: 50%;
+	display: inline-block;
+}
+/*for second dot*/
+.dot2 {
+	position: relative;
+	top: 46px;
+	left: 736px;
+	height: 8px;
+	width: 8px;
+	background-color: #000000;
+	border-radius: 50%;
+	display: inline-block;
+}
+/*for third dot*/
+.dot3 {
+	position: relative;
+	top: 46px;
+	left: 740px;
+	height: 8px;
+	width: 8px;
+	background-color: #000000;
+	border-radius: 50%;
+	display: inline-block;
+}
+/*person name*/
+h1 {
+	position: absolute;
+	top: 0px;
+	left: 32px;
+	width: 58px;
+	height: 28px;
+	text-align: left;
+	font: normal normal bold 28px/34px Helvetica;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+/*place*/
+h2 {
+	position: absolute;
+	top: 25px;
+	left: 32px;
+	width: 123px;
+	height: 29px;
+	text-align: left;
+	font: normal normal normal 24px/29px Verdana;
+	letter-spacing: 0px;
+	color: #707070;
+	opacity: 1;
+}
+/*for image*/
+.postimg {
+	position: relative;
+	top: 100px;
+	left: 0px;
+	width: 800px;
+	height: 400px;
+	background: transparent 0% 0% no-repeat padding-box;
+}
+.header-cont {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+}
+.header {
+	height: 50px;
+	background: #f0f0f0;
+	border: 1px solid #ccc;
+	width: 100%;
+	margin: 0px auto;
+}
