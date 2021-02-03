@@ -1,12 +1,14 @@
 import "./postImage.css";
 import heart from "./heart.png";
 import share from "./share.png";
+
+// For post details
 function Details(props) {
   return (
-    <div className="boxdiv">
+    <div className="boxdiv">  
       <h1>{props.Name}</h1>
       <h2>{props.place}</h2>
-      <span className="dots" />
+      <span className="dot1" />
       <span className="dot2" />
       <span className="dot3" />
 
