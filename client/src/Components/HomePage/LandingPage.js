@@ -5,8 +5,9 @@ function LandingPage(props) {
 	return (
 		<div>
 			<img className="landingimg" src={landingImage} alt="landing page" />
-			<div className="team">10x Team 04</div>
+			<div className="teamText">10x Team 04</div>
 			<button
+				className="enterButton"
 				onClick={() => {
 					props.callUserPosts(false);
 				}}
