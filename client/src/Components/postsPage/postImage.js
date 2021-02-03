@@ -2,11 +2,13 @@ import React from "react";
 import "./postImage.css";
 import Details from "./details";
 import Header from "./homeHeader";
-
+  
+  // Calling details of post
 function PostImage() {
   return (
-    <div>
+    <div>      
       <Header />
+      {/* calling the dummy data */}
       <Details
         Name="Siva"
         place="Bangalore"

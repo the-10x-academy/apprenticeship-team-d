@@ -72,7 +72,7 @@
 	opacity: 1;
 }
 /*for first dot*/
-.dots {
+.dot1 {
 	position: relative;
 	top: 46px;
 	left: 732px;
@@ -138,16 +138,4 @@ h2 {
 	width: 800px;
 	height: 400px;
 	background: transparent 0% 0% no-repeat padding-box;
-}
-.header-cont {
-	width: 100%;
-	position: fixed;
-	top: 0px;
-}
-.header {
-	height: 50px;
-	background: #f0f0f0;
-	border: 1px solid #ccc;
-	width: 100%;
-	margin: 0px auto;
 }
