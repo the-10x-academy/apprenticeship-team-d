@@ -19,7 +19,7 @@ export default function Header() {
 						}}
 						className="cam-mid"
 					>
-						<img className="cam" src={camera} alt="c.." />
+						<img className="camera" src={camera} alt="c.." />
 					</div>
 				</div>
 			</div>
