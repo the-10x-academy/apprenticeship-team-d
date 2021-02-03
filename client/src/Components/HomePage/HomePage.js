@@ -4,23 +4,22 @@ import LandingPage from "./LandingPage";
 import PostImage from "../postsPage/postImage";
 import { useState, useEffect } from "react";
 function HomePage(props) {
-	const [userPosts, callUserPosts] = useState(true);
+	const [postsPage, getPostsPage] = useState(true); //getting homePage on clicking enter on landingPage
 
-	const [customers, getCustomers] = useState([]); //setting state of customers after getting from server
+	const [postDetails, getPostDetails] = useState([]); //setting state of postDetails after getting from server
 
 	//functin for fetching data from server
 	async function callAPI() {
 		const res = await fetch("http://localhost:9000/posts");
-		res.json().then((res) => getCustomers(res));
+		res.json().then((res) => getPostDetails(res));
 	}
-
 	useEffect(() => {
 		callAPI();
 		console.log("called");
 	}, []);
 
-	return userPosts ? (
-		<LandingPage callUserPosts={callUserPosts} />
+	return postsPage ? (
+		<LandingPage callUserPosts={getPostsPage} />
 	) : (
 		<PostImage />
 	);
