@@ -3,7 +3,7 @@ import "./header.css";
 import icon from "./icon.png";
 import camera from "./camera.png";
 
-export default function Header() {
+export default function Header(props) {
 	return (
 		<div id="backTopHeader1">
 			<div>
@@ -15,7 +15,7 @@ export default function Header() {
 					{/* //url of page to be opened */}
 					<div
 						onClick={() => {
-							console.log("upload Page");
+							props.callUploadpage(false);
 						}}
 						className="cam-mid"
 					>
