@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./postImage.css";
 import Details from "./details";
 import Header from "./homeHeader";
@@ -6,6 +6,19 @@ import Upload from "../upload/uploadPost";
 // Calling details of post
 function PostImage(props) {
 	const [uploadPage, callUploadpage] = useState(true);
+
+	const [postDetails, getPostDetails] = useState([]); //setting state of postDetails after getting from server
+
+	//functin for fetching data from server
+	async function callAPI() {
+		const res = await fetch("http://localhost:9000/posts");
+		res.json().then((res) => getPostDetails(res));
+	}
+	useEffect(() => {
+		callAPI();
+		console.log("called");
+	}, []);
+
 	return uploadPage ? (
 		<div>
 			<Header callUploadpage={callUploadpage} />

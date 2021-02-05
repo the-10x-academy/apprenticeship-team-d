@@ -8,18 +8,6 @@ import { useState, useEffect } from "react";
 function HomePage(props) {
 	const [postsPage, getPostsPage] = useState(true); //getting homePage on clicking enter on landingPage
 
-	const [postDetails, getPostDetails] = useState([]); //setting state of postDetails after getting from server
-
-	//functin for fetching data from server
-	async function callAPI() {
-		const res = await fetch("http://localhost:9000/posts");
-		res.json().then((res) => getPostDetails(res));
-	}
-	useEffect(() => {
-		callAPI();
-		console.log("called");
-	}, []);
-
 	return postsPage ? (
 		<LandingPage callUserPosts={getPostsPage} />
 	) : (
