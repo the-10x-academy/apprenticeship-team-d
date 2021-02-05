@@ -70,6 +70,7 @@
 	left: 32px;
 	background: transparent 0% 0% no-repeat padding-box;
 	opacity: 1;
+	cursor: pointer;
 }
 /*for first dot*/
 .dot1 {
