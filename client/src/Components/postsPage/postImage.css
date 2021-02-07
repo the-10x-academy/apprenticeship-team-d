@@ -15,7 +15,7 @@
 /*for the footer text*/
 .headtag {
 	position: relative;
-	top: 70px;
+	top: 60px;
 	left: 32px;
 	width: 450px;
 	height: 28px;
@@ -75,7 +75,7 @@
 /*for first dot*/
 .dot1 {
 	position: relative;
-	top: 46px;
+	top: 50px;
 	left: 732px;
 	height: 8px;
 	width: 8px;
@@ -86,7 +86,7 @@
 /*for second dot*/
 .dot2 {
 	position: relative;
-	top: 46px;
+	top: 50px;
 	left: 736px;
 	height: 8px;
 	width: 8px;
@@ -97,7 +97,7 @@
 /*for third dot*/
 .dot3 {
 	position: relative;
-	top: 46px;
+	top: 50px;
 	left: 740px;
 	height: 8px;
 	width: 8px;
@@ -108,7 +108,7 @@
 /*person name*/
 h1 {
 	position: absolute;
-	top: 0px;
+	top: 15px;
 	left: 32px;
 	width: 58px;
 	height: 28px;
@@ -117,12 +117,13 @@ h1 {
 	letter-spacing: 0px;
 	color: #000000;
 	opacity: 1;
+	white-space: nowrap;
 }
 /*place*/
 h2 {
 	position: absolute;
-	top: 25px;
-	left: 32px;
+	top: 42px;
+	left: 31px;
 	width: 123px;
 	height: 29px;
 	text-align: left;

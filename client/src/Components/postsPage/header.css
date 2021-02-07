@@ -1,19 +1,19 @@
 /* for scrolling */
-#backTopHeader1{
-	background-color: #fffeff;
+#backTopHeader1 {
+	background-color: #ffffff;
 	position: fixed;
 	width: 1920px;
 	height: 200px;
 	top: 0px;
-  }
-  
-  /* navigation bar */
-  .logoHead {
+}
+
+/* navigation bar */
+.logoHead {
 	position: absolute;
 	left: 200px;
-  }
-  
-  .outer-div {
+}
+
+.outer-div {
 	top: 25px;
 	left: 200px;
 	width: 64px;
@@ -21,10 +21,10 @@
 	background: transparent url("icon.png") 0% 0% no-repeat padding-box;
 	opacity: 1;
 	flex-wrap: wrap;
-  }
-  
-  /* for logo icon */
-  img {
+}
+
+/* for logo icon */
+img {
 	flex: 50%;
 	position: fixed;
 	top: 12px;
@@ -33,14 +33,14 @@
 	width: 35px;
 	height: 50px;
 	opacity: 1;
-  }
-  
-  /* backgroung colour */
-  .back {
+}
+
+/* backgroung colour */
+.back {
 	background-color: #a56ec5;
-  }
-  
-  .text1 {
+}
+
+.text1 {
 	position: fixed;
 	width: 289;
 	height: 71;
@@ -50,10 +50,10 @@
 	letter-spacing: 0px;
 	color: #006238;
 	opacity: 1;
-  }
-  
-  /* for camera icon */
-  .camera {
+}
+
+/* for camera icon */
+.camera {
 	max-width: 100%;
 	left: 1672px;
 	top: 40px;
@@ -63,48 +63,46 @@
 	position: fixed;
 	opacity: 1;
 	cursor: pointer;
-  }
-  .cam-outer {
+}
+.cam-outer {
 	display: flex;
-  }
-  .cam-mid {
+}
+.cam-mid {
 	flex: 1;
 	margin: 1em;
-  }
-  
-  
-  /* for horizontal line */
-  hr {
-	font: normal normal normal no-repeat #99ffd3;
+}
+
+/* for horizontal line */
+hr {
 	position: relative;
 	top: 23px;
 	z-index: 10;
-  }
-  .line-cont {
+	border: 1px solid #007e47;
+}
+.line-cont {
 	width: 100%;
 	position: fixed;
 	top: 0px;
-  }
-  .line {
+}
+.line {
 	position: relative;
 	top: 96px;
-  }
-  /* instaclone text */
-  .text1 {
+}
+/* instaclone text */
+.text1 {
 	flex: 50%;
-  }
-  
-  
-  .content {
+}
+
+.content {
 	padding: 16px;
-  }
-  
-  .sticky {
+}
+
+.sticky {
 	position: fixed;
 	top: 0;
 	width: 100%;
-  }
-  
-  .sticky + .content {
+}
+
+.sticky + .content {
 	padding-top: 102px;
-  }
+}
