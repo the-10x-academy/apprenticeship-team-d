@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const mongo = require("./mongo");
-const post_schema = require("./models/post");
+const imageSchema = require("./models/image");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
@@ -11,7 +11,7 @@ router.get("/", function (req, res, next) {
 /* read list of post from db */
 router.get("/postobjs", async (req, res) => {
 	/* api to fetch list of posts */
-	const posts = await post_schema.find({});
+	const posts = await imageSchema.find({});
 	res.send(posts);
 });
 module.exports = router;

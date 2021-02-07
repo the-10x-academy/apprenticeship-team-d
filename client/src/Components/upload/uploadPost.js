@@ -2,6 +2,8 @@ import React from "react";
 import "./uploadPoststyle.css";
 import Axios from "axios";
 import Header from "../postsPage/homeHeader";
+import PostImage from "../postsPage/postImage";
+
 class Upload extends React.Component {
 	constructor() {
 		super();
@@ -12,6 +14,7 @@ class Upload extends React.Component {
 			imagepath: "",
 			likes: 0,
 			filename: "No file choosen",
+			pageflag: true,
 		};
 	}
 	fileSelect = (e) => {
@@ -40,18 +43,22 @@ class Upload extends React.Component {
 		e.preventDefault();
 		const newpost = new FormData();
 		newpost.append("name", this.state.name);
-		newpost.append("location", this.state.location);
-		newpost.append("message", this.state.message);
-		newpost.append("imagepath", this.state.imagepath);
-		newpost.append("likes", this.state.likes);
+		newpost.append("place", this.state.location);
+		newpost.append("desc", this.state.message);
+		newpost.append("image", this.state.imagepath);
+		// newpost.append("likes", this.state.likes);
 		console.log(newpost);
-		Axios.post("localhost:9000", newpost)
+		Axios.post("http://localhost:9000/", newpost)
 			.then((res) => console.log(res))
 			.catch((err) => console.log(err));
+		this.setState({ pageflag: false });
+	};
+	flagchange = () => {
+		this.setState({ pageflag: false });
 	};
 	render() {
 		console.log(this.state.post);
-		return (
+		return this.state.pageflag ? (
 			<div>
 				<Header />
 				<form action="#">
@@ -109,6 +116,8 @@ class Upload extends React.Component {
 					</div>
 				</form>
 			</div>
+		) : (
+			<PostImage />
 		);
 	}
 }

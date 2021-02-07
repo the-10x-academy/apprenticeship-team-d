@@ -3,6 +3,8 @@ import "./postImage.css";
 import Details from "./details";
 import Header from "./homeHeader";
 import Upload from "../upload/uploadPost";
+import DateFormat from "./dateformat";
+
 // Calling details of post
 function PostImage(props) {
 	const [uploadPage, callUploadpage] = useState(true);
@@ -11,17 +13,38 @@ function PostImage(props) {
 
 	//functin for fetching data from server
 	async function callAPI() {
-		const res = await fetch("http://localhost:9000/posts");
+		const res = await fetch("http://localhost:9000/postobjs");
 		res.json().then((res) => getPostDetails(res));
 	}
 	useEffect(() => {
 		callAPI();
 		console.log("called");
-	}, []);
+	});
 
+	function Arrayencode(buffer) {
+		var binary = "";
+		var bytes = [].slice.call(new Uint8Array(buffer));
+		bytes.forEach((b) => (binary += String.fromCharCode(b)));
+		return window.btoa(binary);
+	}
+	let PostDetails1 = [...postDetails];
 	return uploadPage ? (
 		<div>
 			<Header callUploadpage={callUploadpage} />
+
+			{PostDetails1.reverse().map((item) => (
+				<Details
+					Name={item.name}
+					key={item.id}
+					place={item.place}
+					heading={item.desc}
+					image={`data:image/;base64,
+					${Arrayencode(item.img.data.data).toString("base64")}`}
+					likes="10"
+					date={DateFormat(item.date)}
+				/>
+			))}
+
 			{/* calling the dummy data */}
 			<Details
 				Name="Siva"

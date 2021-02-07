@@ -22,11 +22,23 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use((req, res, next) => {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow_Headers", "*");
+	if (req.method === "OPTIONS") {
+		res.header("Access-Controll-Allow-Methods", "*");
+		return res.status(200).json({});
+	}
+	next();
+});
+
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "uploads")));
 
 app.use("/", indexRouter);
 app.get("/postobjs", posts);
+app.post("/", indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
