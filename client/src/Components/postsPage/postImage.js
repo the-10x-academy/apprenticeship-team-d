@@ -19,7 +19,7 @@ function PostImage(props) {
 	useEffect(() => {
 		callAPI();
 		console.log("called");
-	});
+	}, [postDetails]);
 
 	function Arrayencode(buffer) {
 		var binary = "";

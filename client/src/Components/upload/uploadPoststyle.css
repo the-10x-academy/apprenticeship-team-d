@@ -98,6 +98,7 @@
 	background: #f0f0f0;
 	border: 1px solid #707070;
 	border-radius: 5px;
+	pointer-events: none;
 }
 .uploadcolorbutton {
 	text-align: center;
