@@ -1,18 +1,14 @@
-// Create a database and collections in mongodb
-
 const mongoose = require("mongoose");
-const url = "mongodb://127.0.0.1:27017/Instaclone"; // database name
+const url = "mongodb://127.0.0.1:27017/image";
 
 mongoose.connect(url, { useNewUrlParser: true });
 
-const db = mongoose.connection; // here  connected
+const db = mongoose.connection;
 
 db.once("open", (_) => {
-	// if connected
-	console.log("Database connected:", url);
+  console.log("Database connected:", url);
 });
 
 db.on("error", (err) => {
-	// if error
-	console.error("connection error:", err);
+  console.error("connection error:", err);
 });
