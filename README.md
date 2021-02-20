@@ -7,20 +7,20 @@ _This project was bootstrapped with Create React App._
 
 Visual Studio Code (source-code editor) <br />
 Node.js <br />
-HTML <br />
-CSS <br />
+monngoDB <br />
 Git <br />
 
 ##Scripts
-In this directory You can run:
+In this directory you can run:
 
-### 'npm install'
-
-This will install the packages required for the application to work.We have to run this command on both server and client.
 
 ### 'git clone <link>'
 
 This will clone repository to our machine.
+
+### 'npm install'
+
+This will install the packages required for the application to work.We have to run this command on both server and client.
 
 ### 'npm start'
 
